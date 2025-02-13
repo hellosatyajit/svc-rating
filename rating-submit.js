@@ -85,18 +85,20 @@ export class SubmitRating extends LitElement {
         }
       }
       .modal-content {
-        position: relative;
-        top: 1px;
-        right: 1px;
+        position: fixed;
+        width: 100%;
+        max-width: 300px;
+        max-height: 90vh;
         background-color: #fefefe;
         padding: 20px;
         border: 1px solid #888;
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
         border-radius: 14px;
-        transform: translate(-100%,-100%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
       .close {
         color: #aaaaaa;
